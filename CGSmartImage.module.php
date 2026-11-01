@@ -51,7 +51,8 @@ class CGSmartImage extends CGExtensions
         // more smarty plugins
         $smarty->register_block('cgsi_convert',array('cgsi_utils','cgsi_convert'));
         $smarty->register_block('cgsi_getimages',array('cgsi_extended','cgsi_getimages'));
-        $this->RegisterModulePlugin(); // this is here so the module can be used from the admin.
+        // Smarty 4 loses loop-scoped arguments when non-cacheable functions are deferred.
+        $this->RegisterModulePlugin(FALSE, TRUE); // this is here so the module can be used from the admin.
     }
 
     function LazyLoadAdmin() { return FALSE; }
