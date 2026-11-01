@@ -106,17 +106,20 @@ class CGImageBase implements ArrayAccess
     }
 
 
+    #[\ReturnTypeWillChange]
     public function offsetExists($k)
     {
         return in_array($k,CGImageBase::$_keys);
     }
 
 
+    #[\ReturnTypeWillChange]
     public function offsetUnset($k)
     {
         throw new Exception('Attempt to unset an attribute of a CGImageBase object');
     }
 
+    #[\ReturnTypeWillChange]
     public function offsetGet($k)
     {
         $k = strtolower($k);
@@ -159,6 +162,7 @@ class CGImageBase implements ArrayAccess
     }
 
 
+    #[\ReturnTypeWillChange]
     public function offsetSet($k,$v)
     {
         if( !in_array($k,CGImageBase::$_keys) ) throw new Exception('Invalid Attempt to modify the attribute of CGImageBase');
