@@ -1,4 +1,6 @@
-# CGSmartImage (maintained fork)
+# cmsms-CGSmartImage
+
+Maintained fork of the **CGSmartImage** module for CMS Made Simple.
 
 Calguy's Smart Image Toolkit: the `{CGSmartImage}` tag and related plugins that resize, crop, filter, watermark and cache images (GD), with responsive/device-aware output.
 
@@ -37,13 +39,15 @@ repository's commits (and tags, when made) instead.
 
 ## Installing / updating a site
 
-The folder name must be exactly `CGSmartImage`.
+The repository is called `cmsms-CGSmartImage`, but the module folder inside a site must be
+named exactly **`CGSmartImage`** (CMSMS finds modules by folder name), so always give the
+target folder when cloning:
 
 ```sh
 # new install of the fork into a site
 cd /path/to/site/modules
 mv CGSmartImage CGSmartImage.orig          # keep the old copy until verified, then delete it
-git clone <this-repository-url> CGSmartImage
+git clone https://github.com/<owner>/cmsms-CGSmartImage.git CGSmartImage
 
 # later updates
 cd /path/to/site/modules/CGSmartImage && git pull
