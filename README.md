@@ -47,7 +47,7 @@ target folder when cloning:
 # new install of the fork into a site
 cd /path/to/site/modules
 mv CGSmartImage CGSmartImage.orig          # keep the old copy until verified, then delete it
-git clone https://github.com/<owner>/cmsms-CGSmartImage.git CGSmartImage
+git clone https://github.com/stom66/cmsms-CGSmartImage.git CGSmartImage
 
 # later updates
 cd /path/to/site/modules/CGSmartImage && git pull
