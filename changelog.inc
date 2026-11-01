@@ -282,4 +282,11 @@
     <li>Added ability for service worker to be registered at all times.</li>
   </ul>
 </li>
+<li>Version 1.22.8
+  <ul>
+    <li>Fork release by stom66.</li>
+    <li>Marked CGImageBase ArrayAccess methods for PHP 8.1+.</li>
+    <li>Preserved Smarty loop arguments.</li>
+  </ul>
+</li>
 </ul>

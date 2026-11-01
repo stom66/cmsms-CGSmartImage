@@ -59,7 +59,7 @@ class CGSmartImage extends CGExtensions
     function LazyLoadFrontend() { return FALSE; }
     function GetName() { return get_class($this); }
     function GetFriendlyName() { return $this->Lang('friendlyname');  }
-    function GetVersion() { return '1.22.7'; }
+    function GetVersion() { return '1.22.8'; }
     function MinimumCMSVersion() { return '2.2.9'; }
     function GetDependencies() { return array('CGExtensions'=>'1.61');   }
     function GetAuthor() { return 'calguy1000'; }
